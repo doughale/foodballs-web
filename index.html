@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Balls</title>
+  <meta name="description" content="Food Balls — a canvas creature-and-food simulation sandbox." />
+  <script type="module" crossorigin src="./assets/index-BbPN8bL6.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Df3Ay8pb.css">
+</head>
+<body>
+  <div class="app">
+    <div class="arena" id="arena">
+      <canvas id="canvas"></canvas>
+      <div class="hint" id="hint"></div>
+    </div>
+
+    <aside class="panel" id="panel">
+      <button class="collapse" id="collapse" title="Collapse panel" aria-label="Collapse panel">&#8250;</button>
+      <div class="panel__vlabel" id="vlabel">FOOD BALLS</div>
+
+      <div class="panel__content">
+        <h2 class="panel__title">FOOD BALLS</h2>
+
+        <section class="sec">
+          <div class="sec__label">Simulation</div>
+          <div class="row" id="sim-primary"></div>
+          <div class="row">
+            <button class="mbtn" id="btn-reset">Reset</button>
+            <button class="mbtn" id="btn-respawn">Respawn balls</button>
+            <button class="mbtn" id="btn-clear">Clear food</button>
+          </div>
+        </section>
+
+        <section class="sec">
+          <div class="sec__label">Food mode</div>
+          <div class="row">
+            <button class="mbtn" id="mode-onetime">One-time</button>
+            <button class="mbtn" id="mode-regen">Regenerating</button>
+          </div>
+          <p class="hint2" id="mode-desc"></p>
+        </section>
+
+        <section class="sec">
+          <div class="sec__label">Overlay</div>
+          <button class="mbtn" id="btn-smell">Show smell</button>
+        </section>
+
+        <section class="sec">
+          <div class="sec__label">Species</div>
+          <div id="species-list"></div>
+        </section>
+
+        <section class="sec">
+          <div class="sec__label">Food items</div>
+          <div class="foodcount" id="food-count"></div>
+        </section>
+      </div>
+    </aside>
+  </div>
+
+</body>
+</html>
